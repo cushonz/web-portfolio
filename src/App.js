@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./App.css";
@@ -39,7 +40,12 @@ function App() {
             </div>
           </div>
           <div className="offer">
-            <div className="plans">
+            <motion.div
+              className="plans"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, amount: 0.3 }} // Trigger when 30% of the element is in view
+            >
               <h2>Essential Starter Package</h2>
               <ul>
                 <ul>
@@ -59,8 +65,13 @@ function App() {
                   <li>Price: Starting at $500.</li>
                 </ul>
               </ul>
-            </div>
-            <div className="plans">
+            </motion.div>
+            <motion.div
+              className="plans"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, amount: 0.3 }} // Trigger when 30% of the element is in view
+            >
               <h2>Professional Growth Package</h2>
 
               <ul>
@@ -78,8 +89,13 @@ function App() {
                 <li>Timeline: 4-6 weeks.</li>
                 <li>Price: Starting at $1,500.</li>
               </ul>
-            </div>
-            <div className="plans">
+            </motion.div>
+            <motion.div
+              className="plans"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, amount: 0.3 }} // Trigger when 30% of the element is in view
+            >
               <h2>Premium Custom Solution</h2>
               <ul>
                 <li>
@@ -99,7 +115,7 @@ function App() {
                 <li>Timeline: 6-8 weeks or more.</li>
                 <li>Custom quote.</li>
               </ul>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
