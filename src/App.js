@@ -30,13 +30,33 @@ function App() {
           <div className="blurb">
             <p>{provide.skills}</p>
             <div className="service-flex">
-              <div className="card">
+              <motion.div
+                className="card"
+                initial={{ opacity: 0, x: -150 }} // Start state
+                whileInView={{ opacity: 1, x: 0 }} // Animation when in view
+                transition={{ duration: 2, ease: "easeOut" }} // Smooth easing
+                viewport={{ once: true, amount: 0.3 }} // Trigger when 30% of the element is visible
+              >
                 <img src="https://th.bing.com/th/id/R.3286c4561f9baefdba59d61d2660abbe?rik=GR96RVEnqyosrQ&pid=ImgRaw&r=0" />
-              </div>
-
-              <div className="card">
+              </motion.div>
+              <motion.div
+                className="card"
+                initial={{ opacity: 0, x: -150 }} // Start state
+                whileInView={{ opacity: 1, x: 0 }} // Animation when in view
+                transition={{ duration: 1.5, ease: "easeOut" }} // Smooth easing
+                viewport={{ once: true, amount: 0.3 }} // Trigger when 30% of the element is visible
+              >
+                <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" />
+              </motion.div>
+              <motion.div
+                className="card"
+                initial={{ opacity: 0, x: -150 }} // Start state
+                whileInView={{ opacity: 1, x: 0 }} // Animation when in view
+                transition={{ duration: 1, ease: "easeOut" }} // Smooth easing
+                viewport={{ once: true, amount: 0.3 }} // Trigger when 30% of the element is visible
+              >
                 <img src="https://cdn0.iconfinder.com/data/icons/designer-skills/128/node-js-512.png" />
-              </div>
+              </motion.div>
             </div>
           </div>
           <div className="offer">
