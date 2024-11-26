@@ -42,9 +42,10 @@ function App() {
           <div className="offer">
             <motion.div
               className="plans"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true, amount: 0.3 }} // Trigger when 30% of the element is in view
+              initial={{ opacity: 0, y: -50 }} // Start state
+              whileInView={{ opacity: 1, y: 0 }} // Animation when in view
+              transition={{ duration: 0.5, ease: "easeOut" }} // Smooth easing
+              viewport={{ once: true, amount: 0.3 }} // Trigger when 30% of the element is visible
             >
               <h2>Essential Starter Package</h2>
               <ul>
@@ -68,9 +69,10 @@ function App() {
             </motion.div>
             <motion.div
               className="plans"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true, amount: 0.3 }} // Trigger when 30% of the element is in view
+              initial={{ opacity: 0, y: -50 }} // Start state
+              whileInView={{ opacity: 1, y: 0 }} // Animation when in view
+              transition={{ duration: 0.8, ease: "easeOut" }} // Smooth easing
+              viewport={{ once: true, amount: 0.3 }} // Trigger when 30% of the element is visible
             >
               <h2>Professional Growth Package</h2>
 
@@ -92,9 +94,10 @@ function App() {
             </motion.div>
             <motion.div
               className="plans"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true, amount: 0.3 }} // Trigger when 30% of the element is in view
+              initial={{ opacity: 0, y: -50 }} // Start state
+              whileInView={{ opacity: 1, y: 0 }} // Animation when in view
+              transition={{ duration: 1.1, ease: "easeOut" }} // Smooth easing
+              viewport={{ once: true, amount: 0.3 }} // Trigger when 30% of the element is visible
             >
               <h2>Premium Custom Solution</h2>
               <ul>
