@@ -1,7 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
+
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
+import { Button } from "react-bootstrap";
 import "./App.css";
 import intro from "./intro.json";
 import provide from "./service.json";
@@ -11,14 +15,10 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <div className="header-content">
-          <h5>Home</h5>
-          <h5>About</h5>
-          <h5>Lab</h5>
-        </div>
+        <div className="header-content"></div>
         <div className="logos">
           <FontAwesomeIcon icon={faSquareGithub} size="2x" />
-          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          <FontAwesomeIcon icon={faEnvelope} size="2x" />
         </div>
       </div>
       <div className="hero">
@@ -86,6 +86,7 @@ function App() {
                   <li>Price: Starting at $500.</li>
                 </ul>
               </ul>
+              <button className="my-custom-button">Sign up now</button>
             </motion.div>
             <motion.div
               className="plans"
@@ -111,6 +112,7 @@ function App() {
                 <li>Timeline: 4-6 weeks.</li>
                 <li>Price: Starting at $1,500.</li>
               </ul>
+              <button className="my-custom-button">Sign up now</button>
             </motion.div>
             <motion.div
               className="plans"
@@ -138,6 +140,7 @@ function App() {
                 <li>Timeline: 6-8 weeks or more.</li>
                 <li>Custom quote.</li>
               </ul>
+              <button className="my-custom-button">Sign up now</button>
             </motion.div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 .App {
   display: grid;
-  min-height: 100vh;
+  min-height: 100svh;
   max-width: 100vw;
 }
 
@@ -28,6 +28,7 @@
   align-items: center;
   grid-column: 10/11;
   color: var(--text);
+  margin: 1rem;
 }
 
 .hero {
@@ -120,4 +121,13 @@
   flex-direction: row;
   background-color: rgba(26, 24, 27, 0.75);
   border-radius: 1rem;
+}
+
+.my-custom-button {
+  background-color: var(--button-color); /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Custom padding */
+  font-size: 16px; /* Custom font size */
+  border-radius: 5px; /* Rounded corners */
 }
