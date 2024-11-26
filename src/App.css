@@ -131,3 +131,15 @@
   font-size: 16px; /* Custom font size */
   border-radius: 5px; /* Rounded corners */
 }
+
+a {
+  text-decoration: none; /* Optional: removes underline */
+}
+
+a:visited {
+  color: inherit; /* Inherit the current color instead of changing to purple */
+}
+
+a:focus {
+  outline: none; /* Remove the outline after focus */
+}

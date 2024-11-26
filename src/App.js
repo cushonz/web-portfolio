@@ -17,7 +17,9 @@ function App() {
       <div className="header">
         <div className="header-content"></div>
         <div className="logos">
-          <FontAwesomeIcon icon={faSquareGithub} size="2x" />
+          <a href="https://github.com/cushonz">
+            <FontAwesomeIcon icon={faSquareGithub} size="2x" />
+          </a>
           <FontAwesomeIcon icon={faEnvelope} size="2x" />
         </div>
       </div>
