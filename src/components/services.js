@@ -1,6 +1,7 @@
 import react from "react";
 import { motion } from "framer-motion";
 import provide from "./service.json";
+import "../styles/services.css";
 
 function Services() {
   return (
