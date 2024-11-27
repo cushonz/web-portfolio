@@ -66,3 +66,21 @@
     border-radius: 5px; /* Rounded corners */
   }
   
+  @media (max-width: 576px) {
+    .blurb{
+      width:80%;
+      
+    }
+  }
+  
+  /* Styles for medium devices (tablets) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    /* Add styles for tablets here */
+   
+  }
+  
+  /* Styles for large devices (desktops) */
+  @media (min-width: 769px) {
+    /* Add styles for desktops here */
+  }
+  

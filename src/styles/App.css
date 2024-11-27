@@ -57,6 +57,7 @@ a:focus {
 
   .intro img {
     height: 50%;
+    border-radius: 10rem;
     overflow: hidden;
   }
 }
