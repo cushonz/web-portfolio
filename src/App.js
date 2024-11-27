@@ -11,11 +11,12 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <div className="intro">
+        <p>{intro.introText}</p>
+        <img src={profilePic} />
+      </div>
+
       <div className="hero">
-        <div className="intro">
-          <p>{intro.introText}</p>
-          <img src={profilePic} />
-        </div>
         <Services />
       </div>
     </div>
