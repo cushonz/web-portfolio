@@ -3,7 +3,7 @@ import React from "react";
 import Header from "./components/Header";
 import Services from "./components/services";
 
-import "./App.css";
+import "./styles/App.css";
 import intro from "./intro.json";
 
 function App() {
