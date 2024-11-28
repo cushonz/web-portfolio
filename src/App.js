@@ -11,10 +11,13 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="intro">
-        <h1 className="underline"> something</h1>
-        <p>{intro.introText}</p>
-        <img src={profilePic} />
+      <div className="intro text-center p-4 sm:flex sm:items-center sm:justify-between sm:p-8">
+        <p className="text-lg sm:text-xl lg:text-2xl">{intro.introText}</p>
+        <img
+          src={profilePic}
+          alt="Profile"
+          className="mt-4 sm:mt-0 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full mx-auto sm:mx-0"
+        />
       </div>
 
       <Services />
