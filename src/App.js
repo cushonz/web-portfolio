@@ -1,10 +1,9 @@
 import React from "react";
-
+import "./styles/App.css";
 import Header from "./components/Header";
 import Services from "./components/services";
 import "./index.css"; // Adjust if you named the file differently
 
-import "./styles/App.css";
 import intro from "./intro.json";
 
 function App() {
@@ -13,6 +12,7 @@ function App() {
     <div className="App">
       <Header />
       <div className="intro">
+        <h1 className="underline"> something</h1>
         <p>{intro.introText}</p>
         <img src={profilePic} />
       </div>
