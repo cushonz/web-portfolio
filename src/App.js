@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Header />
-      <div className="intro text-center p-4 sm:flex sm:items-center sm:justify-between sm:p-8">
+      <div className="flex wrap flex-col intro text-center p-4 sm:flex sm:items-center sm:justify-between sm:p-8 w-svw">
         <p className="text-lg sm:text-xl lg:text-2xl">{intro.introText}</p>
         <img
           src={profilePic}
