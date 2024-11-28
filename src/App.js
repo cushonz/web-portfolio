@@ -16,9 +16,7 @@ function App() {
         <img src={profilePic} />
       </div>
 
-      <div className="hero">
-        <Services />
-      </div>
+      <Services />
     </div>
   );
 }

@@ -12,6 +12,11 @@ body {
   background-attachment: fixed;
 }
 
+.App {
+  display: grid;
+  width: 100%;
+}
+
 .profile {
   display: flex;
   margin-top: 1rem;
@@ -26,7 +31,7 @@ body {
   color: var(--text);
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem;
-  grid-column: 1 / -1;
+  grid-column: 1 / span 11;
 }
 
 .intro img {
