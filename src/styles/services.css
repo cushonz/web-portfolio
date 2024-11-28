@@ -71,6 +71,11 @@
       width:80%;
       
     }
+
+    .services{
+      display: flex;
+      flex-direction: column;
+    }
   }
   
   /* Styles for medium devices (tablets) */

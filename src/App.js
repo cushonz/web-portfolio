@@ -2,6 +2,7 @@ import React from "react";
 
 import Header from "./components/Header";
 import Services from "./components/services";
+import "./index.css"; // Adjust if you named the file differently
 
 import "./styles/App.css";
 import intro from "./intro.json";
