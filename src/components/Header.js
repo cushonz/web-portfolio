@@ -2,11 +2,10 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import "../styles/header.css";
 
 function Header() {
   return (
-    <div className="grid grid-cols-5 w-screen h-20 bg-gray-500">
+    <div className="grid grid-cols-5 w-screen h-20">
       <div className="flex justify-around items-center col-start-5">
         <a
           href="https://github.com/cushonz"

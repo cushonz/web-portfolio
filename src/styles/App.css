@@ -12,7 +12,6 @@ body {
   background-attachment: fixed;
 }
 
-
 .profile {
   display: flex;
   margin-top: 1rem;
@@ -46,27 +45,4 @@ a:visited {
 
 a:focus {
   outline: none; /* Remove the outline after focus */
-}
-
-/* Styles for small devices (mobile phones) */
-@media (max-width: 576px) {
-  .intro {
-    flex-wrap: wrap;
-  }
-
-  .intro img {
-    height: 50%;
-    border-radius: 10rem;
-    overflow: hidden;
-  }
-}
-
-/* Styles for medium devices (tablets) */
-@media (min-width: 577px) and (max-width: 768px) {
-  /* Add styles for tablets here */
-}
-
-/* Styles for large devices (desktops) */
-@media (min-width: 769px) {
-  /* Add styles for desktops here */
 }
