@@ -6,8 +6,8 @@ import "../styles/header.css";
 
 function Header() {
   return (
-    <div className="header w-full p-4 sm:p-6 md:p-8 bg-gray-100">
-      <div className="logos flex justify-center sm:justify-start gap-4 sm:gap-6">
+    <div className="grid grid-cols-5 w-screen h-20 bg-gray-500">
+      <div className="flex justify-around items-center col-start-5">
         <a
           href="https://github.com/cushonz"
           className="text-gray-600 hover:text-gray-900"

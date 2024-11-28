@@ -12,10 +12,6 @@ body {
   background-attachment: fixed;
 }
 
-.App {
-  display: grid;
-  width: 100%;
-}
 
 .profile {
   display: flex;
