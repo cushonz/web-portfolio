@@ -7,7 +7,7 @@ function Skills() {
     <div className="grid grid-cols-5">
       <div className="flex col-span-5 my-10 mx-10 px-10 bg-gray-950 bg-opacity-50 h-full rounded-md flex-col grow gap-10 text-white">
         <p className="my-10 text-xl">{provide.skills}</p>
-        <div className="flex sm:gap-10 justify-center object-contain lg:justify-around">
+        <div className="flex gap-10 sm:gap-10 justify-center object-contain lg:justify-around">
           <motion.div
             initial={{ opacity: 0, x: -150 }} // Start state
             whileInView={{ opacity: 1, x: 0 }} // Animation when in view

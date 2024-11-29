@@ -31,11 +31,6 @@ function Plan1() {
             <li>Price: Starting at $500.</li>
           </ul>
         </ul>
-        <div className="flex justify-center mt-20">
-          <button className="px-4 py-2 bg-blue-500 text-white rounded-md">
-            Sign up now
-          </button>
-        </div>
       </motion.div>
     </div>
   );
