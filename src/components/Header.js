@@ -1,17 +1,24 @@
-import react from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import "../styles/header.css";
 
 function Header() {
   return (
-    <div className="header">
-      <div className="logos">
-        <a href="https://github.com/cushonz">
+    <div className="grid grid-cols-5 w-screen h-20">
+      <div className="flex justify-around items-center col-start-5">
+        <a
+          href="https://github.com/cushonz"
+          className="text-gray-600 hover:text-gray-900"
+        >
           <FontAwesomeIcon icon={faSquareGithub} size="2x" />
         </a>
-        <FontAwesomeIcon icon={faEnvelope} size="2x" />
+        <a
+          href="mailto:example@example.com"
+          className="text-gray-600 hover:text-gray-900"
+        >
+          <FontAwesomeIcon icon={faEnvelope} size="2x" />
+        </a>
       </div>
     </div>
   );
