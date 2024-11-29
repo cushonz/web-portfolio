@@ -8,19 +8,21 @@ function Services() {
     <div className="flex flex-col md:grid md:grid-cols-3 my-20 gap-5 sm:gap-10 text-white">
       <div className="flex flex-col bg-gray-950 bg-opacity-50 lg:rounded-md p-20 sm:p-1 sm:gap-y-10">
         <Plan1 />
-        <button className="px-4 py-2 bg-blue-500 text-white rounded-md">
+        <button className="mt-auto px-4 py-2 bg-blue-500 text-white rounded-md">
           Learn more
         </button>
       </div>
+
       <div className="flex flex-col bg-gray-950 bg-opacity-50 lg:rounded-md p-20 sm:p-1 sm:gap-y-10">
         <Plan2 />
-        <button className="px-4 py-2 bg-blue-500 text-white rounded-md">
+        <button className="mt-auto px-4 py-2 bg-blue-500 text-white rounded-md">
           Learn more
         </button>
       </div>
+
       <div className="flex flex-col bg-gray-950 bg-opacity-50 lg:rounded-md p-20 sm:p-1 sm:gap-y-10">
         <Plan3 />
-        <button className="px-4 py-2 bg-blue-500 text-white rounded-md">
+        <button className="mt-auto px-4 py-2 bg-blue-500 text-white rounded-md">
           Learn more
         </button>
       </div>
