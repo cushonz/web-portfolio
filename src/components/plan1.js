@@ -4,6 +4,7 @@ function Plan1() {
   return (
     <div>
       <motion.div
+        className="flex flex-col text-center p-10"
         initial={{ opacity: 0, y: -50 }} // Start state
         whileInView={{ opacity: 1, y: 0 }} // Animation when in view
         transition={{ duration: 0.5, ease: "easeOut" }} // Smooth easing

@@ -17,7 +17,7 @@ function App() {
         <img
           src={profilePic}
           alt="Profile"
-          className="mt-4 sm:mt-0 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full mx-auto sm:mx-0"
+          className="mt-4 sm:mt-0 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-72 lg:h-72 rounded-full mx-auto sm:mx-0"
         />
       </div>
 
