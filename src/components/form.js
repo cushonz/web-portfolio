@@ -1,7 +1,46 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 function MyForm() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = {
+      name,
+      email,
+      message,
+    };
+
+    try {
+      // Send the data to the backend API to be inserted into the database
+      const response = await fetch("http://localhost:5000/api/users", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        // If the submission is successful
+        alert("Message submitted successfully!");
+        setName("");
+        setEmail("");
+        setMessage("");
+      } else {
+        alert("Failed to submit message.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Error submitting form. Please try again.");
+    }
+  };
+
   return (
     <div>
       <motion.div
@@ -23,6 +62,7 @@ function MyForm() {
           <input
             type="text"
             id="name"
+            onChange={(e) => setName(e.target.value)}
             placeholder="Enter your name"
             className="mt-1 block w-full px-3 py-2 border border-gray-600 bg-gray-900 text-gray-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
           />
@@ -37,6 +77,7 @@ function MyForm() {
           <input
             type="email"
             id="email"
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email"
             className="mt-1 block w-full px-3 py-2 border border-gray-600 bg-gray-900 text-gray-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
           />
@@ -51,11 +92,13 @@ function MyForm() {
           <textarea
             id="message"
             placeholder="Message"
+            onChange={(e) => setMessage(e.target.value)}
             className="mt-1 block w-full h-80 px-3 py-2 border border-gray-600 bg-gray-900 text-gray-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
           />
         </div>
         <button
           type="submit"
+          onClick={handleSubmit}
           className="w-full py-2 px-4 bg-purple-700 text-white rounded-md hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-purple-500"
         >
           Submit
