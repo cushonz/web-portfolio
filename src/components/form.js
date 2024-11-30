@@ -49,13 +49,15 @@ function MyForm() {
         whileInView={{ opacity: 1, y: 0 }} // Animation when in view
         transition={{ duration: 1.1, ease: "easeOut" }} // Smooth easing
       >
-        <h1 className="text-white">We are excited to work with you!</h1>
+        <h1 className="text-gray-900 dark:text-white">
+          We are excited to work with you!
+        </h1>
       </motion.div>
-      <form className="w-full mx-auto p-6 bg-gray-800 bg-opacity-90 rounded-lg shadow-lg space-y-6 text-gray-200">
+      <form className="w-full mx-auto p-6 bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-200 bg-opacity-90 rounded-lg shadow-lg space-y-6">
         <div>
           <label
             htmlFor="name"
-            className="block text-sm font-medium text-gray-300"
+            className="block text-sm font-medium text-gray-700 dark:text-gray-300"
           >
             Name
           </label>
@@ -64,13 +66,13 @@ function MyForm() {
             id="name"
             onChange={(e) => setName(e.target.value)}
             placeholder="Enter your name"
-            className="mt-1 block w-full px-3 py-2 border border-gray-600 bg-gray-900 text-gray-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+            className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
           />
         </div>
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-gray-300"
+            className="block text-sm font-medium text-gray-700 dark:text-gray-300"
           >
             Email
           </label>
@@ -79,13 +81,13 @@ function MyForm() {
             id="email"
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email"
-            className="mt-1 block w-full px-3 py-2 border border-gray-600 bg-gray-900 text-gray-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+            className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
           />
         </div>
         <div>
           <label
             htmlFor="message"
-            className="block text-sm font-medium text-gray-300"
+            className="block text-sm font-medium text-gray-700 dark:text-gray-300"
           >
             Message
           </label>
@@ -93,13 +95,13 @@ function MyForm() {
             id="message"
             placeholder="Message"
             onChange={(e) => setMessage(e.target.value)}
-            className="mt-1 block w-full h-80 px-3 py-2 border border-gray-600 bg-gray-900 text-gray-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+            className="mt-1 block w-full h-80 px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
           />
         </div>
         <button
           type="submit"
           onClick={handleSubmit}
-          className="w-full py-2 px-4 bg-purple-700 text-white rounded-md hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full py-2 px-4 bg-purple-600 text-white rounded-md hover:bg-purple-700 dark:bg-purple-700 dark:hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-purple-500"
         >
           Submit
         </button>

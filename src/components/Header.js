@@ -5,6 +5,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
+import SliderToggle from "./SliderToggle";
 
 function Header() {
   const location = useLocation();
@@ -29,7 +30,10 @@ function Header() {
           </h1>
         </motion.div>
       )}
+
       <div className="flex justify-around items-center col-start-5">
+        <SliderToggle />
+
         {!isContactRoute && (
           <Link to="/contact" className="text-gray-600 hover:text-gray-900">
             <FontAwesomeIcon icon={faEnvelope} size="2x" />
