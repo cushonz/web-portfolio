@@ -1,7 +1,7 @@
 import React from "react";
-import Plan1 from "./plan1";
-import Plan2 from "./plan2";
-import Plan3 from "./plan3";
+import Plan1 from "./plans/plan1";
+import Plan2 from "./plans/plan2";
+import Plan3 from "./plans/plan3";
 import { Link } from "react-router-dom";
 
 function Services() {

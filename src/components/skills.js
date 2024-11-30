@@ -1,6 +1,6 @@
 import react from "react";
 import { motion } from "framer-motion";
-import provide from "./service.json";
+import provide from "./json_data/service.json";
 
 function Skills() {
   return (

@@ -4,10 +4,10 @@ import Header from "./Header";
 
 function Contact() {
   return (
-    <div>
+    <div className="h-screen overflow-hidden">
       <Header />
-      <div className="flex justify-center items-center h-screen overflow-hidden">
-        <div className="w-full m-20">
+      <div className="flex justify-center items-center h-full overflow-hidden">
+        <div className="w-full max-w-full px-6">
           <MyForm />
         </div>
       </div>
