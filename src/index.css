@@ -17,8 +17,12 @@ code {
 }
 
 :root {
-  --primary: linear-gradient(90deg, #1a0b2e, #5d1a72, #9e3f7e, #d16b98);
-  --secondary: #1a0b2e;
-  --button-color: #b9a0d3;
+  --primary: linear-gradient(45deg, #6a1b9a, #9c4aaf, #c274d6, #e4a1db, #d39e17, #978c2b);
+  --secondary: #9c4aaf;
+  --button-color: #fbc02d;
   --text: #f5f5f5;
 }
+
+
+
+
