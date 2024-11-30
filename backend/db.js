@@ -12,6 +12,10 @@ db.serialize(() => {
   db.run(
     "CREATE TABLE IF NOT EXISTS Users (id INTEGER PRIMARY KEY, name TEXT, email TEXT, message TEXT, date DATETIME)"
   );
+
+  db.run(
+    "CREATE TABLE IF NOT EXISTS Emails (id INTEGER PRIMARY KEY, email TEXT UNIQUE)"
+  );
 });
 
 module.exports = db;
