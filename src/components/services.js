@@ -11,7 +11,7 @@ function Services() {
         <Plan1 />
         <Link
           className="mt-auto px-4 py-2 bg-[#A78BFA] text-[#4C1D95] rounded-md dark:bg-[#5b21b6] dark:hover:bg-[#7C3AED] dark:text-[#EDEDED] text-center"
-          to="/contact"
+          to="/starter"
         >
           Learn More
         </Link>

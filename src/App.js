@@ -10,6 +10,7 @@ import Home from "./components/pages/home";
 import Contact from "./components/pages/contact";
 import "./styles/App.css";
 import "./index.css"; // Adjust if you named the file differently
+import StarterPackage from "./components/pages/StarterPackage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} /> {/* Placeholder route */}
         <Route path="/contact" element={<Contact />} />
+        <Route path="/starter" element={<StarterPackage />} />
         {/* Placeholder route */}
       </Routes>
     </BrowserRouter>
