@@ -3,8 +3,8 @@ import MyForm from "./form";
 
 function Contact() {
   return (
-    <div>
-      <div>
+    <div className="flex justify-center items-center h-screen">
+      <div className="w-full m-20">
         <MyForm />
       </div>
     </div>
