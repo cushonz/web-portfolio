@@ -17,7 +17,7 @@ root.render(
         content="A portfolio website showcasing web development projects."
       />
       <meta name="author" content="Your Name" />
-      <title>My Portfolio</title>
+      <title>Cushon Design</title>
       {/* You can add other meta tags here */}
     </Helmet>
     <App />
