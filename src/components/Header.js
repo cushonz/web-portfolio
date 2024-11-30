@@ -4,6 +4,7 @@ import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function Header() {
   const location = useLocation();
@@ -15,9 +16,15 @@ function Header() {
 
   return (
     <div className="grid grid-cols-5 w-screen h-20">
-      <div className="flex items-center ml-4">
+      <motion.div
+        className="flex items-center ml-4"
+        initial={{ opacity: 0, x: -50 }} // Start state
+        whileInView={{ opacity: 1, x: 0 }} // Animation when in view
+        transition={{ duration: 0.5, ease: "easeOut" }} // Smooth easing
+        viewport={{ once: true, amount: 0.3 }} // Trigger when 30% of the element is visible
+      >
         <h1 className="text-white text-3xl">Cushon Design</h1>
-      </div>
+      </motion.div>
       <div className="flex justify-around items-center col-start-5">
         {!isContactRoute && (
           <Link to="/contact" className="text-gray-600 hover:text-gray-900">
