@@ -12,7 +12,7 @@ function MyForm() {
       >
         <h1 className="text-white">We are excited to work with you!</h1>
       </motion.div>
-      <form className="mx-auto p-6 bg-gray-800 bg-opacity-90 rounded-lg shadow-lg space-y-6 text-gray-200">
+      <form className="w-full mx-auto p-6 bg-gray-800 bg-opacity-90 rounded-lg shadow-lg space-y-6 text-gray-200">
         <div>
           <label
             htmlFor="name"
