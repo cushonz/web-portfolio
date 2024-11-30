@@ -1,6 +1,6 @@
 import React from "react";
-import MyForm from "./form";
-import Header from "./Header";
+import MyForm from "../form";
+import Header from "../Header";
 
 function Contact() {
   return (

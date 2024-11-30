@@ -6,8 +6,8 @@ import {
   Routes,
   BrowserRouter,
 } from "react-router-dom";
-import Home from "./components/home";
-import Contact from "./components/contact";
+import Home from "./components/pages/home";
+import Contact from "./components/pages/contact";
 import "./styles/App.css";
 import "./index.css"; // Adjust if you named the file differently
 

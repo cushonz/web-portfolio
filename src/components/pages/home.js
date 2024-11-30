@@ -1,12 +1,12 @@
 // Home.js
 import React from "react";
-import "../styles/App.css";
-import Header from "./Header";
-import Skills from "./skills";
-import Services from "./services";
-import "../index.css"; // Adjust if you named the file differently
+import "../../styles/App.css";
+import Header from "../Header";
+import Skills from "../skills";
+import Services from "../services";
+import "../../index.css"; // Adjust if you named the file differently
 
-import intro from "../intro.json";
+import intro from "../../intro.json";
 
 function Home() {
   const profilePic = "https://avatars.githubusercontent.com/u/77802000?v=4";
