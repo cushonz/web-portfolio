@@ -9,7 +9,6 @@ function MyForm() {
         initial={{ opacity: 0, y: -50 }} // Start state
         whileInView={{ opacity: 1, y: 0 }} // Animation when in view
         transition={{ duration: 1.1, ease: "easeOut" }} // Smooth easing
-        viewport={{ once: true, amount: 0.3 }} // Trigger when 30% of the element is visible
       >
         <h1 className="text-white">We are excited to work with you!</h1>
       </motion.div>

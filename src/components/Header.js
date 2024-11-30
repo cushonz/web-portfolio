@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -13,12 +14,9 @@ function Header() {
         >
           <FontAwesomeIcon icon={faSquareGithub} size="2x" />
         </a>
-        <a
-          href="mailto:example@example.com"
-          className="text-gray-600 hover:text-gray-900"
-        >
+        <Link to="/contact" className="text-gray-600 hover:text-gray-900">
           <FontAwesomeIcon icon={faEnvelope} size="2x" />
-        </a>
+        </Link>
       </div>
     </div>
   );
