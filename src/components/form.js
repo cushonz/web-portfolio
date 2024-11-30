@@ -18,7 +18,7 @@ function MyForm() {
 
     try {
       // Send the data to the backend API to be inserted into the database
-      const response = await fetch("http://localhost:5000/api/users", {
+      const response = await fetch("http://localhost:5000/api/Messages", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

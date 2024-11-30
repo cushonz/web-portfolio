@@ -17,7 +17,7 @@ app.use(
 
 db.serialize(() => {
   db.run(`
-    CREATE TABLE IF NOT EXISTS Users (
+    CREATE TABLE IF NOT EXISTS Messages (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT,
       email TEXT,
@@ -35,8 +35,8 @@ db.serialize(() => {
 });
 
 // Example route to get all users
-app.get("/api/users", (req, res) => {
-  db.all("SELECT * FROM Users", (err, rows) => {
+app.get("/api/Messages", (req, res) => {
+  db.all("SELECT * FROM Messages", (err, rows) => {
     if (err) {
       return res.status(500).send(err.message);
     }
@@ -55,7 +55,7 @@ app.get("/api/emails", (req, res) => {
 });
 
 // POST route to add a new user
-app.post("/api/users", (req, res) => {
+app.post("/api/messages", (req, res) => {
   const { name, email, message } = req.body; // Destructure data from the request body
 
   // Check if the email already exists in the Emails table
@@ -80,7 +80,7 @@ app.post("/api/users", (req, res) => {
 
     // Insert user data into the Users table
     const insertUserStmt = db.prepare(
-      "INSERT INTO Users (name, email, message, date) VALUES (?, ?, ?, CURRENT_TIMESTAMP)"
+      "INSERT INTO Messages (name, email, message, date) VALUES (?, ?, ?, CURRENT_TIMESTAMP)"
     );
     insertUserStmt.run(name, email, message, function (err) {
       if (err) {

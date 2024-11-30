@@ -10,7 +10,7 @@ const db = new sqlite3.Database("./database.db", (err) => {
 db.serialize(() => {
   // Create the Users table if it does not already exist
   db.run(
-    "CREATE TABLE IF NOT EXISTS Users (id INTEGER PRIMARY KEY, name TEXT, email TEXT, message TEXT, date DATETIME)"
+    "CREATE TABLE IF NOT EXISTS Messages (id INTEGER PRIMARY KEY, name TEXT, email TEXT, message TEXT, date DATETIME)"
   );
 
   db.run(
