@@ -5,21 +5,16 @@ function StarterPackage() {
   return (
     <div className="flex flex-col h-screen">
       <Header />
-      <div className="grid grid-cols-5 grid-rows-7 h-full p-5">
+      <div className="flex">
         <img
+          alt="doing business"
           className="object-cover w-full h-full col-span-6 row-span-3"
           src="https://plus.unsplash.com/premium_photo-1661772661721-b16346fe5b0f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         />
-        <p className="text-white p-3">
-          Our Essential Starter Package is perfect for small businesses and
-          startups looking to establish a professional online presence without
-          the complexity of advanced features. This package provides a sleek and
-          modern website that serves as a solid foundation for your brand’s
-          digital footprint.
-        </p>
-        <div className="flex col-span-3 mt-10">
-          <ul className="text-white space-y-4 list-inside list-disc pl-6">
-            <h1 className="text-white p-3 text-center text-xl">
+
+        <div className="flex mt-10">
+          <ul className="dark:text-white space-y-4 list-inside list-disc pl-6">
+            <h1 className="dark:text-white p-3 text-center text-xl">
               Included in the package
             </h1>
 
@@ -52,6 +47,25 @@ function StarterPackage() {
             </li>
           </ul>
         </div>
+      </div>
+      <div className="flex dark:text-white justify-center mt-10">
+        <h1 className="text-3xl">What we need from you!</h1>
+      </div>
+      <div className="flex dark:text-white justify-center mt-10 list-disc list-inside">
+        <ul className="dark:text-white space-y-4 list-inside list-disc pl-6">
+          <li className="hover:text-gray-300 transition duration-300 ease-in-out">
+            General idea of website layout
+          </li>
+          <li className="hover:text-gray-300 transition duration-300 ease-in-out">
+            Needed website functionality
+          </li>
+          <li className="hover:text-gray-300 transition duration-300 ease-in-out">
+            Desired pages
+          </li>
+          <li className="hover:text-gray-300 transition duration-300 ease-in-out">
+            Images of your business
+          </li>
+        </ul>
       </div>
     </div>
   );

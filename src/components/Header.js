@@ -30,23 +30,30 @@ function Header() {
           </h1>
         </motion.div>
       )}
-
-      <div className="flex justify-around items-center col-start-5">
+      <div className="flex m-3">
         <SliderToggle />
+      </div>
 
+      <div className="flex justify-between items-center col-start-5 mr-5">
         {!isContactRoute && (
-          <Link to="/contact" className="text-gray-600 hover:text-gray-900">
+          <Link
+            to="/contact"
+            className="text-gray-600 dark:text-white hover:text-gray-900"
+          >
             <FontAwesomeIcon icon={faEnvelope} size="2x" />
           </Link>
         )}
         {!isHomeRoute && (
-          <Link to="/" className="text-gray-600 hover:text-gray-900">
+          <Link
+            to="/"
+            className="text-gray-600 dark:text-white hover:text-gray-900"
+          >
             <FontAwesomeIcon icon={faHome} size="2x" />
           </Link>
         )}
         <a
           href="https://github.com/cushonz"
-          className="text-gray-600 hover:text-gray-900"
+          className="text-gray-600 hover:text-gray-900 dark:text-white"
         >
           <FontAwesomeIcon icon={faSquareGithub} size="2x" />
         </a>
