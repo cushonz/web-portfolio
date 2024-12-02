@@ -52,7 +52,7 @@ function StarterPackage() {
         <h1 className="text-3xl">What we need from you!</h1>
       </div>
       <div className="flex dark:text-white justify-center mt-10 list-disc list-inside">
-        <ul className="dark:text-white space-y-4 list-inside list-disc pl-6">
+        <ul className="dark:text-white space-y-4 list-inside list-disc pl-6 pb-6">
           <li className="hover:text-gray-300 transition duration-300 ease-in-out">
             General idea of website layout
           </li>
@@ -62,7 +62,7 @@ function StarterPackage() {
           <li className="hover:text-gray-300 transition duration-300 ease-in-out">
             Desired pages
           </li>
-          <li className="hover:text-gray-300 transition duration-300 ease-in-out">
+          <li className="hover:text-gray-300 transition duration-300 ease-in-out ">
             Images of your business
           </li>
         </ul>

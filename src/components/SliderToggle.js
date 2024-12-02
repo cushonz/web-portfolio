@@ -37,20 +37,22 @@ function SliderToggle() {
   }, []);
 
   return (
-    <div className="flex items-center">
+    <div className="flex flex-wrap items-center justify-center sm:flex-col sm:gap-2">
       <div
         onClick={toggleDarkMode}
-        className={`ml-3 w-14 h-8 flex items-center bg-gray-300 rounded-full p-1 cursor-pointer transition-colors ${
+        className={`ml-3 w-14 h-8 sm:w-12 sm:h-6 md:w-16 md:h-10 flex items-center bg-gray-300 rounded-full p-1 cursor-pointer transition-colors ${
           isDarkMode ? "bg-purple-500" : "bg-gray-300"
         }`}
       >
         <div
-          className={`h-6 w-6 bg-white rounded-full shadow-md transform transition-transform ${
-            isDarkMode ? "translate-x-6" : "translate-x-0"
+          className={`h-6 w-6 sm:h-4 sm:w-4 md:h-8 md:w-8 bg-white rounded-full shadow-md transform transition-transform ${
+            isDarkMode
+              ? "translate-x-8 sm:translate-x-4 md:translate-x-6"
+              : "translate-x-0"
           }`}
         ></div>
       </div>
-      <span className="ml-3 text-gray-700 dark:text-white">
+      <span className="ml-3 sm:ml-0 text-gray-700 dark:text-white text-sm sm:text-xs md:text-base">
         {isDarkMode ? "Dark Mode" : "Light Mode"}
       </span>
     </div>
