@@ -17,8 +17,13 @@
   transform: rotateY(180deg);
 }
 
-.toggled {
+.inner.toggled {
   transform: rotateY(180deg);
+}
+
+.inner.toggled .front,
+.inner.toggled .back {
+  border-color: black;
 }
 
 .back,

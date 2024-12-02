@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import FlipCard from "../FlipCard";
+import Plan1 from "../plans/plan1";
 
 function Professional() {
   return (
     <div>
       <FlipCard
         frontContent={
-          <div className="flex flex-grow justify-center items-center h-full">
-            <h1 className="text-3xl" style={{ transform: "rotateZ(45deg)" }}>
-              Professional package
-            </h1>
+          <div className="flex flex-grow justify-center h-full text-3xl">
+            <h1>Essential Start Package</h1>
           </div>
         }
         backContent={
