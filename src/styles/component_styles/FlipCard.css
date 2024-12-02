@@ -1,6 +1,6 @@
 .card {
   width: 300px;
-  height: 100px;
+  height: 500px;
   margin: 20px;
   perspective: 1000px;
 }
@@ -17,6 +17,10 @@
   transform: rotateY(180deg);
 }
 
+.toggled {
+  transform: rotateY(180deg);
+}
+
 .back,
 .front {
   position: absolute;
@@ -28,9 +32,6 @@
 .front {
   background-color: firebrick;
   color: aliceblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: 10px solid firebrick;
   border-radius: 10px;
   transform: rotateY(0deg);
