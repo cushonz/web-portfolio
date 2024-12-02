@@ -1,5 +1,7 @@
 // Home.js
 import React from "react";
+import Professional from "./components/pages/Professional";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -20,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} /> {/* Placeholder route */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/starter" element={<StarterPackage />} />
+        <Route path="/Professional" element={<Professional />} />
         {/* Placeholder route */}
       </Routes>
     </BrowserRouter>
