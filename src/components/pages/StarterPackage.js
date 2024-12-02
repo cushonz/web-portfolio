@@ -3,23 +3,26 @@ import Header from "../Header";
 
 function StarterPackage() {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <div className="flex">
-        <img
-          alt="doing business"
-          className="object-cover w-full h-full col-span-6 row-span-3"
-          src="https://plus.unsplash.com/premium_photo-1661772661721-b16346fe5b0f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:h-screen p-6">
+        {/* Image Section */}
+        <div className="flex flex-col">
+          <img
+            alt="doing business"
+            className="object-cover w-full h-64 md:h-full"
+            src="https://plus.unsplash.com/premium_photo-1661772661721-b16346fe5b0f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          />
+        </div>
 
-        <div className="flex mt-10">
-          <ul className="dark:text-white space-y-4 list-inside list-disc pl-6">
-            <h1 className="dark:text-white p-3 text-center text-xl">
-              Included in the package
-            </h1>
-
+        {/* List Section */}
+        <div className="flex flex-col items-center justify-center p-6">
+          <h1 className="dark:text-white text-2xl pb-6 text-center">
+            Included in the package
+          </h1>
+          <ul className="dark:text-white space-y-4 list-inside list-disc">
             <li className="hover:text-gray-300 transition duration-300 ease-in-out">
-              Custom Design: Tailoerd to reflect your unique brand identity,
+              Custom Design: Tailored to reflect your unique brand identity,
               ensuring a professional and cohesive look across all pages.
             </li>
             <li className="hover:text-gray-300 transition duration-300 ease-in-out">
@@ -48,11 +51,13 @@ function StarterPackage() {
           </ul>
         </div>
       </div>
-      <div className="flex dark:text-white justify-center mt-10">
-        <h1 className="text-3xl">What we need from you!</h1>
-      </div>
-      <div className="flex dark:text-white justify-center mt-10 list-disc list-inside">
-        <ul className="dark:text-white space-y-4 list-inside list-disc pl-6 pb-6">
+
+      {/* Next Section */}
+      <div className="flex flex-col items-center justify-center p-6">
+        <h1 className="text-3xl dark:text-white mb-6 text-center">
+          What we need from you!
+        </h1>
+        <ul className="dark:text-white space-y-4 list-inside list-disc text-center">
           <li className="hover:text-gray-300 transition duration-300 ease-in-out">
             General idea of website layout
           </li>
@@ -62,7 +67,7 @@ function StarterPackage() {
           <li className="hover:text-gray-300 transition duration-300 ease-in-out">
             Desired pages
           </li>
-          <li className="hover:text-gray-300 transition duration-300 ease-in-out ">
+          <li className="hover:text-gray-300 transition duration-300 ease-in-out">
             Images of your business
           </li>
         </ul>
