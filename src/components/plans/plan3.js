@@ -27,7 +27,6 @@ function Plan3() {
           <li>Timeline: 6-8 weeks or more.</li>
           <li>Custom quote.</li>
         </ul>
-        <div className="flex justify-center mt-20"></div>
       </motion.div>
     </div>
   );
