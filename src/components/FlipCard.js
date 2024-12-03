@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/component_styles/FlipCard.css";
 
 function FlipCard({ frontContent, backContent }) {
-  const [isActive, setActive] = useState("false");
+  const [isActive, setActive] = useState(false);
   const toggleCard = () => {
     setActive(!isActive);
   };
