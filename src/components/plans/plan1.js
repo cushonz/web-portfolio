@@ -10,9 +10,6 @@ function Plan1() {
         transition={{ duration: 0.5, ease: "easeOut" }} // Smooth easing
         viewport={{ once: true, amount: 0.3 }} // Trigger when 30% of the element is visible
       >
-        <h1 className="text-4xl text-center mb-10">
-          Essential Starter Package
-        </h1>
         <ul>
           <ul>
             <li>

@@ -41,7 +41,7 @@ function SliderToggle() {
       <div
         onClick={toggleDarkMode}
         className={`ml-3 w-14 h-8 sm:w-12 sm:h-6 md:w-16 md:h-10 flex items-center bg-gray-300 rounded-full p-1 cursor-pointer transition-colors ${
-          isDarkMode ? "bg-purple-500" : "bg-gray-300"
+          isDarkMode ? "bg-red-900" : "bg-gray-300"
         }`}
       >
         <div
