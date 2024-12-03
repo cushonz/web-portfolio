@@ -101,7 +101,7 @@ function MyForm() {
         <button
           type="submit"
           onClick={handleSubmit}
-          className="w-full py-2 px-4 bg-purple-600 text-white rounded-md hover:bg-purple-700 dark:bg-purple-700 dark:hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full py-2 px-4 bg-[#32e0c4] text-white rounded-md hover:bg-[#28b8a2] dark:bg-red-900 dark:hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-[#28b8a2]"
         >
           Submit
         </button>
