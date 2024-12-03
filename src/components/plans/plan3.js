@@ -10,7 +10,6 @@ function Plan3() {
         transition={{ duration: 1.1, ease: "easeOut" }} // Smooth easing
         viewport={{ once: true, amount: 0.3 }} // Trigger when 30% of the element is visible
       >
-        <h2 className="text-4xl text-center mb-10">Premium Custom Solution</h2>
         <ul className="text-left">
           <li>
             Designed for established businesses, high-traffic websites, or those

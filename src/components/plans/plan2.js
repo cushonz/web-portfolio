@@ -10,10 +10,6 @@ function Plan2() {
         transition={{ duration: 0.8, ease: "easeOut" }} // Smooth easing
         viewport={{ once: true, amount: 0.3 }} // Trigger when 30% of the element is visible
       >
-        <h2 className="text-4xl text-center mb-10">
-          Professional Growth Package
-        </h2>
-
         <ul className="text-left">
           <li>
             Perfect for growing businesses or companies needing a polished,

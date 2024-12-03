@@ -13,7 +13,9 @@ function Services() {
         <FlipCard
           frontContent={
             <div className="flex justify-center items-center text-3xl bg-gray-950 bg-opacity-50 lg:rounded-md p-20 sm:p-1 sm:gap-y-10 h-full w-full">
-              <h1>Essential Start Package</h1>
+              <h2 className="text-4xl text-center mb-10">
+                Essential Starter Package
+              </h2>
             </div>
           }
           backContent={<Plan1 />}
@@ -25,7 +27,9 @@ function Services() {
         <FlipCard
           frontContent={
             <div className="flex justify-center items-center text-3xl bg-gray-950 bg-opacity-50 lg:rounded-md p-20 sm:p-1 sm:gap-y-10 h-full w-full">
-              <h1>Essential Start Package</h1>
+              <h2 className="text-4xl text-center mb-10">
+                Professional Growth Package
+              </h2>
             </div>
           }
           backContent={<Plan2 />}
@@ -37,7 +41,9 @@ function Services() {
         <FlipCard
           frontContent={
             <div className="flex justify-center items-center text-3xl bg-gray-950 bg-opacity-50 lg:rounded-md p-20 sm:p-1 sm:gap-y-10 h-full w-full">
-              <h1>Advanced Start Package</h1>
+              <h2 className="text-4xl text-center mb-10">
+                Premium Custom Solution
+              </h2>
             </div>
           }
           backContent={<Plan3 />}
